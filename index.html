@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandem Bank | Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="loginPage" class="login-wrapper">
+    <section class="login-card">
+      <div class="brand-icon">B</div>
+      <h1>Tandem Bank</h1>
+      <p class="muted"></p>
+
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" value="mary brown"
+               autocomplete="username" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password"
+               placeholder="Enter your password"
+               autocomplete="current-password" required>
+
+        <p id="loginError" class="error" role="alert"></p>
+        <button class="primary-btn" type="submit">Sign in</button>
+      </form>
+
+      <p class="demo-note">
+       
+        
+      </p>
+    </section>
+  </main>
+
+  <main id="dashboard" class="hidden">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon small">B</div>
+        <span>Tandem Bank</span>
+      </div>
+      <button id="logoutBtn" class="logout-btn">Sign out</button>
+    </header>
+
+    <div class="sample-banner">
+      Tandem Bank
+    </div>
+
+    <section class="welcome">
+      <p class="muted" id="todayDate"></p>
+      <h1>Good morning, Mary</h1>
+      <p>Welcome back, Mary Brown.</p>
+    </section>
+
+    <section class="balance-card">
+      <p>Account Balance</p>
+      <h2 id="balance">$100,000,000.00</h2>
+      <span class="account-tag"></span>
+      <div class="balance-footer">
+        <span>Account holder</span>
+        <strong>Mary Brown</strong>
+      </div>
+      <div class="balance-footer">
+        <span>Account status</span>
+        <strong>Business Accounts</strong>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="">
+        <span class="">Pending Transactions.</span>
+        <div>
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="fee-row">
+        <span></span>
+        <strong>$250,000.00</strong>
+      </div>
+      <p class="fee-info">
+        
+      </p>
+    </section>
+
+    <section class="actions-card">
+      <h2>Account services</h2>
+      <div class="action-buttons">
+        <button id="transferBtn" class="primary-btn">
+          Transfer
+        </button>
+        <button id="withdrawBtn" class="secondary-btn">
+          Withdraw
+        </button>
+      </div>
+      <p id="actionMessage" role="status" class="status-message"></p>
+    </section>
+
+    <section class="history-card">
+      <h2></h2>
+      <p class="muted"></p>
+      <div class="transaction">
+        <div>
+          <strong>Account Balance</strong>
+          <p></p>
+        </div>
+        <strong class="positive">+$100,000,000.00</strong>
+      </div>
+      <div class="transaction">
+        <div>
+          <strong></strong>
+          <p></p>
+        </div>
+        <strong></strong>
+      </div>
+    </section>
+
+    <footer>
+     
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
